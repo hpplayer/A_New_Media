@@ -133,7 +133,7 @@ public class flickrfinal {
     	 out.close();
     	 in.close();
     	 byte[] response = out.toByteArray();
-    	 FileOutputStream fos = new FileOutputStream("d:/cache/" + "Image" + i + ".jpg");
+    	 FileOutputStream fos = new FileOutputStream("cache/" + "Image" + i + ".jpg");
     	// FileOutputStream fos = new FileOutputStream("cache/" + "Image" + i + ".jpg");
     	 fos.write(response);
     	 fos.close();
@@ -181,7 +181,7 @@ public class flickrfinal {
     	BufferedImage image = null;
     	try {
     		
-    	    image = ImageIO.read(new File("d:/cache/" + "Image" + j + ".jpg"));
+    	    image = ImageIO.read(new File("cache/" + "Image" + j + ".jpg"));
     		 //image = ImageIO.read(new File("cache/" + "Image" + j + ".jpg"));
     	    System.out.println("I load image" + j);
     	} 
